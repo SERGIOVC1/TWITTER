@@ -1,0 +1,139 @@
+/* perfil.css */
+
+/* Fuentes globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6ecf0; /* Color de fondo similar a Twitter */
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: black; /* Color azul de Twitter */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-weight: 700; /* Negrita para el título */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Espacio entre enlaces */
+    font-weight: 500; /* Peso de fuente medio */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* Contenedor del perfil */
+.profile-container {
+    width: 90%;
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 30px auto; /* Centramos el contenedor */
+    padding: 20px;
+    background-color: white; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Encabezado del perfil */
+.profile-header {
+    border-bottom: 1px solid #e1e8ed; /* Línea de separación */
+    padding-bottom: 10px; /* Espaciado inferior */
+    margin-bottom: 10px; /* Espacio entre el encabezado y el contenido */
+}
+
+.profile-header h2 {
+    margin: 0; /* Sin margen */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #14171a; /* Color del texto del encabezado */
+}
+
+.profile-header p {
+    margin: 0; /* Sin margen */
+    color: #657786; /* Color de texto gris para el nombre de usuario */
+}
+
+.profile-header .user-handle {
+    display: inline; /* Alineación en línea */
+    font-weight: 500; /* Peso de fuente medio */
+}
+
+.profile-header .following-count,
+.profile-header .followers-count {
+    color: #657786; /* Color gris para los contadores */
+    font-weight: 400; /* Peso de fuente normal */
+    margin-left: 10px; /* Espacio a la izquierda */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilo para el formulario de tweet */
+form {
+    margin-bottom: 20px; /* Espacio debajo del formulario */
+}
+
+form textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #e1e8ed; /* Borde claro */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio debajo del textarea */
+}
+
+form button {
+    background-color: black; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    margin-top: 10px; /* Espacio arriba del botón */
+}
+
+form button:hover {
+    background-color: gray; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para los tweets */
+.tweets-container {
+    margin-top: 20px; /* Espacio arriba de los tweets */
+}
+
+.tweet {
+    border-bottom: 1px solid #e1e8ed; /* Línea de separación entre tweets */
+    padding: 10px 0; /* Espaciado vertical */
+}
+
+.tweet a {
+    color: black; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.tweet a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.tweet small {
+    color: #657786; /* Color gris para la fecha */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    .profile-header h2 {
+        font-size: 20px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+
+    .profile-header .following-count,
+    .profile-header .followers-count {
+        font-size: 12px; /* Tamaño más pequeño para contadores */
+    }
+}

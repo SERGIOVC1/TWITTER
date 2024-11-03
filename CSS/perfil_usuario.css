@@ -1,0 +1,12 @@
+.profile-header button {
+    background-color: #1da1f2; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+}
+
+.profile-header button:hover {
+    background-color: #1991db; /* Color más oscuro al pasar el ratón */
+}
